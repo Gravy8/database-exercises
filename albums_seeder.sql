@@ -1,4 +1,6 @@
 use codeup_test_db;
+-- drop table if exists albums;
+-- create table albums(id int unsigned AUTO_INCREMENT not null, artist varchar(100) not null, album varchar(100) not null, genre varchar(100) not null, release_date year not null, sales_in_millions decimal(8,2) not null, PRIMARY KEY (id));
 insert into albums (artist, album, genre, release_date, sales_in_millions)
 VALUES
 ('Michael Jackson', 'Thriller', 'Pop, Rock, R&B', 1982, 46.00),
